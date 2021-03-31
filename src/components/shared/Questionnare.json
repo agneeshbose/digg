@@ -1,0 +1,355 @@
+{
+  "page1": [
+    {
+      "id": 1,
+      "question": "Have you ever visited Dubai?",
+      "type": "radio",
+      "options": [
+        {
+          "label": "No"
+        },
+        {
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Do you have any friends or family in Dubai?",
+      "type": "radio",
+      "options": [
+        {
+          "label": "No"
+        },
+        {
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How long do you want to stay in Dubai?",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Upto 3 months"
+        },
+        {
+          "label": "3 to 6 months"
+        },
+        {
+          "label": "6 to 12 months"
+        },
+        {
+          "label": "+12 months"
+        },
+        {
+          "label": "+3 years"
+        }
+      ]
+    }
+  ],
+  "page2": [
+    {
+      "id": 4,
+      "question": "Why do you want to come to dubai?",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Lifestyle"
+        },
+        {
+          "label": "Work opportunities"
+        },
+        {
+          "label": "Education"
+        },
+        {
+          "label": "Finance"
+        },
+        {
+          "label": "Tourism"
+        },
+        {
+          "label": "Family"
+        },
+        {
+          "label": "Business"
+        },
+        {
+          "label": "Security"
+        },
+        {
+          "label": "The weather"
+        },
+        {
+          "label": "Meeting new people"
+        },
+        {
+          "label": "Culture"
+        }
+      ]
+    }
+  ],
+  "page3": [
+    {
+      "id": 5,
+      "question": "What industries would you prefer to work in?",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Construction"
+        },
+        {
+          "label": "Hospitality"
+        },
+        {
+          "label": "Real estate"
+        },
+        {
+          "label": "Tourism"
+        },
+        {
+          "label": "Manufacturing"
+        },
+        {
+          "label": "Technology"
+        },
+        {
+          "label": "Media"
+        },
+        {
+          "label": "Farming"
+        },
+        {
+          "label": "Fishing"
+        },
+        {
+          "label": "Education"
+        },
+        {
+          "label": "Public services"
+        },
+        {
+          "label": "Administration"
+        },
+        {
+          "label": "Financial services"
+        },
+        {
+          "label": "Legal"
+        },
+        {
+          "label": "Health care"
+        },
+        {
+          "label": "Government"
+        },
+        {
+          "label": "Medical"
+        },
+        {
+          "label": "Security"
+        },
+        {
+          "label": "Logistics"
+        },
+        {
+          "label": "Robotics"
+        },
+        {
+          "label": "Fashion"
+        },
+        {
+          "label": "Automotive"
+        },
+        {
+          "label": "Transportation"
+        },
+        {
+          "label": "Customer support"
+        }
+      ]
+    }
+  ],
+  "page4": [
+    {
+      "id": 6,
+      "question": "What are your interests?",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Outdoors"
+        },
+        {
+          "label": "Fitness"
+        },
+        {
+          "label": "Health"
+        },
+        {
+          "label": "Travel"
+        },
+        {
+          "label": "Theme parks"
+        },
+        {
+          "label": "Cooking"
+        },
+        {
+          "label": "Sports"
+        },
+        {
+          "label": "Adventure"
+        },
+        {
+          "label": "Music"
+        },
+        {
+          "label": "Fashion"
+        },
+        {
+          "label": "Technology"
+        },
+        {
+          "label": "Architecture"
+        },
+        {
+          "label": "Writing"
+        },
+        {
+          "label": "Gaming"
+        },
+        {
+          "label": "Dining"
+        },
+        {
+          "label": "History"
+        },
+        {
+          "label": "Theatre"
+        },
+        {
+          "label": "Networking"
+        },
+        {
+          "label": "Art"
+        },
+        {
+          "label": "Politics"
+        },
+        {
+          "label": "Fishing"
+        },
+        {
+          "label": "Meet people"
+        },
+        {
+          "label": "Podecasts"
+        },
+        {
+          "label": "Gambling"
+        },
+        {
+          "label": "Self improvement"
+        },
+        {
+          "label": "Foreign languages"
+        },
+        {
+          "label": "Movies"
+        },
+        {
+          "label": "Celebrities"
+        },
+        {
+          "label": "Dating"
+        },
+        {
+          "label": "Social media"
+        },
+        {
+          "label": "Photography"
+        }
+      ]
+    }
+  ],
+  "page5": [
+    {
+      "id": 7,
+      "question": "Do you have any financial savings",
+      "type": "radio",
+      "options": [
+        {
+          "label": "No savings"
+        },
+        {
+          "label": "0 to 1000 aed"
+        },
+        {
+          "label": "1000 to 5000 aed"
+        },
+        {
+          "label": "5000 to 10,000 aed"
+        },
+        {
+          "label": "10,000 to 20,000 aed"
+        },
+        {
+          "label": "20,000 to 50,000 aed"
+        },
+        {
+          "label": "+50,000 aed"
+        }
+      ]
+    }
+  ],
+  "page6": [
+    {
+      "id": 8,
+      "question": "What is your level of education?",
+      "type": "radio",
+      "options": [
+        {
+          "label": "High school or less"
+        },
+        {
+          "label": "College"
+        },
+        {
+          "label": "Diploma"
+        },
+        {
+          "label": "Bachelors"
+        }
+      ]
+    }
+  ],
+  "page7": [
+    {
+      "id": 9,
+      "question": "How soon do you want to come to Dubai?",
+      "type": "radio",
+      "options": [
+        {
+          "label": "Right now"
+        },
+        {
+          "label": "0 to 3 months"
+        },
+        {
+          "label": "3 to 6 months"
+        },
+        {
+          "label": "6 to 12 months"
+        },
+        {
+          "label": "After 1 year"
+        },
+        {
+          "label": "I'm not sure"
+        }
+      ]
+    }
+  ]
+}
