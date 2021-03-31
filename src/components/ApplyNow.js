@@ -12,6 +12,7 @@ export default function ApplyNow({
     handlePageChange,
     handleProfileInfoChange,
     handleQuestionnareChange,
+    handleNavigateToPage,
     data,
 }) {
     const renderPage = (page) => {
@@ -30,6 +31,7 @@ export default function ApplyNow({
                         data={data}
                         page={page}
                         handlePageChange={handlePageChange}
+                        handleNavigateToPage={handleNavigateToPage}
                     />
                 );
             default:

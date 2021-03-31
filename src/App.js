@@ -52,6 +52,16 @@ export class App extends Component {
         this.setState({ questionnare: { ...questionnare, [id]: value } });
     };
 
+    handleNavigateToPage = (value) => {
+        let page = this.state.currentPage;
+
+        if (value >= 0 && value <= 8) {
+            page = value;
+        }
+
+        this.setState({ currentPage: page });
+    };
+
     render() {
         return (
             <Container>
@@ -60,6 +70,7 @@ export class App extends Component {
                     handlePageChange={this.handlePageChange}
                     handleProfileInfoChange={this.handleProfileInfoChange}
                     handleQuestionnareChange={this.handleQuestionnareChange}
+                    handleNavigateToPage={this.handleNavigateToPage}
                 />
             </Container>
         );

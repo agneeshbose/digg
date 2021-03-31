@@ -15,6 +15,16 @@ const SectionWrapper = styled.div`
     width: 100%;
 `;
 
+const EditIcon = styled.img.attrs({
+    src: '/images/ic-edit.svg',
+    alt: 'Edit',
+})`
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+`;
+
 const ProfileDetails = styled.div`
     display: flex;
     font-size: 1rem;
@@ -67,6 +77,16 @@ export default function CompleteApplication(props) {
         alert('Application date stored in localStorage!');
     };
 
+    const handleQuestionEdit = (questionId) => {
+        const page = Object.keys(Questionnare).findIndex((questionKey) => {
+            return Questionnare[questionKey].find(
+                (ques) => ques.id === questionId
+            );
+        });
+
+        props.handleNavigateToPage(page + 1);
+    };
+
     return (
         <div>
             <Header>
@@ -77,7 +97,14 @@ export default function CompleteApplication(props) {
             <p>Complete - Review your application</p>
             <br />
             <SectionWrapper>
-                <span style={{ color: 'blue' }}>Basic information</span>
+                <span style={{ color: 'blue' }}>
+                    Basic information
+                    <EditIcon
+                        onClick={() => {
+                            props.handleNavigateToPage(0);
+                        }}
+                    />
+                </span>
                 <br />
                 <ProfileDetails>
                     {Object.keys(profileInfo).map((key) => {
@@ -102,17 +129,24 @@ export default function CompleteApplication(props) {
                     const answerIndex = props.data.questionnare[item.id];
                     const answers = [];
 
-                    if (Array.isArray(answerIndex)) {
-                        for (let index of answerIndex) {
-                            answers.push(item.options[index]);
+                    if (answerIndex) {
+                        if (Array.isArray(answerIndex)) {
+                            for (let index of answerIndex) {
+                                answers.push(item.options[index]);
+                            }
+                        } else {
+                            answers.push(item.options[answerIndex]);
                         }
-                    } else {
-                        answers.push(item.options[answerIndex]);
                     }
 
                     return (
-                        <>
-                            <h4>{item.question}</h4>
+                        <React.Fragment key={item.id}>
+                            <h4>
+                                {item.question}{' '}
+                                <EditIcon
+                                    onClick={() => handleQuestionEdit(item.id)}
+                                />
+                            </h4>
                             {answers.map((answer) => {
                                 return (
                                     <ActionButton
@@ -124,7 +158,7 @@ export default function CompleteApplication(props) {
                                     </ActionButton>
                                 );
                             })}
-                        </>
+                        </React.Fragment>
                     );
                 })}
             </SectionWrapper>
