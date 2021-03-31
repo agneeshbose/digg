@@ -20,6 +20,7 @@ const InputField = styled(Field)`
     border-radius: 5px;
     &.radio {
         width: 20px;
+        margin: 0px 5px;
     }
     &.dropdown {
         background-color: white;
@@ -31,8 +32,13 @@ const InputField = styled(Field)`
     }
 `;
 
-const Error = styled.span`
+const Error = styled.div`
     color: red;
+`;
+
+const Radio = styled.div`
+    display: flex;
+    align-items: center;
 `;
 
 const validationSchema = Yup.object().shape({
@@ -132,7 +138,7 @@ export class LandingPageForm extends Component {
                                                 </label>
                                             </Grid.Row>
                                             <Grid.Row>
-                                                <span>
+                                                <Radio>
                                                     <InputField
                                                         type="radio"
                                                         id="male"
@@ -140,22 +146,23 @@ export class LandingPageForm extends Component {
                                                         value="Male"
                                                         className="radio"
                                                     />
-                                                    &nbsp;&nbsp;
+
                                                     <label htmlFor="male">
                                                         Male
                                                     </label>
-                                                </span>
-                                                <InputField
-                                                    type="radio"
-                                                    id="female"
-                                                    name="gender"
-                                                    value="Female"
-                                                    className="radio"
-                                                />
-                                                &nbsp;&nbsp;
-                                                <label htmlFor="female">
-                                                    Female
-                                                </label>
+
+                                                    <InputField
+                                                        type="radio"
+                                                        id="female"
+                                                        name="gender"
+                                                        value="Female"
+                                                        className="radio"
+                                                    />
+
+                                                    <label htmlFor="female">
+                                                        Female
+                                                    </label>
+                                                </Radio>
                                                 <Error>
                                                     {touched.gender &&
                                                         errors.gender}
